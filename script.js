@@ -4,7 +4,7 @@ const displayImage = e => {
   let img = document.getElementById('img');
   let doorIllusion = document.getElementsByClassName('door-illusion')[0];
 
-  img.setAttribute('src', `../img/${imageId}.png`);
+  img.setAttribute('src', `img/${imageId}.png`);
 
   var t1 = new TimelineLite();
 
@@ -105,7 +105,7 @@ gsap.from('.hero-section', {
 window.onload = function() {
   ['agra.png', 'varanasi.png', 'manali.png', 'goa.png'].forEach(imgName => {
     let img = new Image();
-    img.src = `../img/${imgName}`;
+    img.src = `img/${imgName}`;
   });
 }
 
